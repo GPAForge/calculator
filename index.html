@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPA Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Image -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    
+
+<!-- Header -->
+<header>
+    <img src="logo n.png" height="10%"  width="50%" >
+    <div class="header-feedback">
+            <span id="feedbackLink">Feedback</span>
+        </div>
+</header>
+<div class="container">
+
+<h1 >University GPA Calculator</h1>
+
+<!-- Student Details -->
+<input id="name" placeholder="Student Name">
+<input id="className" placeholder=" Reg.No">
+
+
+<!-- Semester Dropdown -->
+<select id="semester">
+    <option value="">Select Semester</option>
+    <option value="Semester 1">Semester 1.1</option>
+    <option value="Semester 2">Semester 1.2</option>
+    <option value="Semester 3">Semester 2,1</option>
+    <option value="Semester 4">Semester 2.2</option>
+    <option value="Semester 5">Semester 3.1</option>
+    <option value="Semester 6">Semester 3.2</option>
+    <option value="Semester 7">Semester 4.1</option>
+    <option value="Semester 8">Semester 4.2</option>
+</select>
+
+<hr>
+
+<div id="subjects"></div>
+
+<button class="add" onclick="addSubject()">Add Subject</button>
+<button class="calc" onclick="calculateGPA()">Calculate GPA</button>
+
+<hr>
+</div>
+
+
+<!-- Result -->
+<div id="resultCard" class="card">
+
+     <div class="result-header">
+    <img src="logo n.png" height="10%"  width="50%" >   
+     </div>
+
+    <h3 style="text-align: center;" ">Result Sheet</h3>
+
+    <p>Name : <span id="rname"></span></p>
+    <p>Reg.No : <span id="rclass"></span></p>
+    <p>Semester : <span id="rsem"></span></p>
+    <p>GPA : <span id="rgpa"></span></p>
+    <p>Degree Class : <span id="rgrade"></span></p>
+ <h4 style="text-align: center;">Subjects</h4>
+
+<table border="1" width="100%">
+    <thead>
+        <tr>
+            <th>Course</th>
+            <th>Grade</th>
+           
+        </tr>
+    </thead>
+    <tbody id="resultSubjects"></tbody>
+</table>   
+
+</div>
+
+<br>
+
+<button class="pdf" onclick="downloadPDF()">Download PDF</button>
+<button class="img" onclick="downloadImage()">Download Image</button>
+<button class="reset" onclick="resetAll()">Reset</button>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-box">
+        <h4>About Me</h4>
+        <p>
+            I created this GPA Calculator to simplify the way university students
+            calculate and track their semester GPA. My goal is to make academic
+            tools easy to use, intuitive, and accessible for everyone, helping 
+            students focus on learning without worrying about calculations.
+            
+            
+        </p>
+    </div>
+
+    <div class="footer-box">
+        <h4>Follow Us</h4>
+        <p>Facebook | LinkedIn | YouTuben |</p>
+    </div>
+
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
