@@ -2,8 +2,8 @@ body{
     font-family: Arial;
     text-align:center;
     background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f')no-repeat center center/cover;
-  height: 100vh;
-  background-attachment: fixed;
+    width: auto;
+    margin: 80px auto;
 }
 
 /* Header */
