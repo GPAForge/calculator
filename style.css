@@ -1,9 +1,10 @@
 body{
     font-family: Arial;
     text-align:center;
-    background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f')no-repeat center center/cover;
-    width: auto;
-    margin: 80px auto;
+    background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center;
+    background-size: cover;
+  
+    
 }
 
 /* Header */
@@ -21,7 +22,7 @@ header {
 }
 .result-header {
   background: #0a1f44; /* Dark Blue */
-    background: linear-gradient(135deg, #0a1f44, #1e3c72);
+  background: linear-gradient(135deg, #0a1f44, #1e3c72);
   color: white;
   padding: 15px;
 }
@@ -184,4 +185,5 @@ footer {
   background: rgba(0,0,0,0.4);
   padding: 20px;
 }
+
 
